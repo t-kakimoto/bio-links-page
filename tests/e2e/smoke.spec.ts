@@ -107,6 +107,14 @@ test.describe('bio links smoke', () => {
     await page.goto('/icon-lab/');
 
     await expect(page.getByRole('heading', { name: 'Icon Lab' })).toBeVisible();
-    await expect(page.locator('.icon-lab-card')).toHaveCount(8);
+    await expect(page.locator('.icon-lab-card')).toHaveCount(9);
+  });
+
+  test('renders personal GitHub link card', async ({ page }) => {
+    await page.goto('/');
+
+    const githubLink = page.locator('#personal-links a.link-card[href="https://github.com/t-kakimoto"]');
+    await expect(githubLink).toHaveCount(1);
+    await expect(githubLink).toContainText('GitHub');
   });
 });

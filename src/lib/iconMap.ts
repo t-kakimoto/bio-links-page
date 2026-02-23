@@ -7,6 +7,7 @@ const ICON_NAME_SET = new Set<IconName>([
   'x',
   'instagram',
   'facebook',
+  'github',
   'globe',
   'section',
   'link',
@@ -35,6 +36,7 @@ export function fallbackIconKey(link: Pick<LinkItem, 'url' | 'sourceType'>): Ico
   if (host.includes('linkedin.')) return 'linkedin';
   if (host.includes('instagram.')) return 'instagram';
   if (host.includes('facebook.')) return 'facebook';
+  if (host.includes('github.')) return 'github';
   if (host.includes('twitter.') || host.includes('x.com')) return 'x';
   if (host.includes('note.')) return 'note';
 

@@ -11,6 +11,7 @@ The following icon definitions in this repository use Remix Icon SVG paths.
 
 - `src/icons/catalog/x.ts` (`twitter-x-fill.svg`)
 - `src/icons/catalog/facebook.ts` (`facebook-fill.svg`)
+- `src/icons/catalog/github.ts` (`github-fill.svg`)
 - `src/icons/catalog/instagram.ts` (`instagram-fill.svg`)
 - `src/icons/catalog/linkedin.ts` (`linkedin-fill.svg`)
 - `src/icons/catalog/section.ts` (`list-unordered.svg`)

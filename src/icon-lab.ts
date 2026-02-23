@@ -10,6 +10,7 @@ const iconNames: IconName[] = [
   'x',
   'instagram',
   'facebook',
+  'github',
   'globe',
   'section',
   'link',

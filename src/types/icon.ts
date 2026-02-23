@@ -4,6 +4,7 @@ export type IconName =
   | 'x'
   | 'instagram'
   | 'facebook'
+  | 'github'
   | 'globe'
   | 'section'
   | 'link';

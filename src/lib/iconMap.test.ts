@@ -8,6 +8,7 @@ describe('iconMap fallback/resolve', () => {
       { url: 'https://www.linkedin.com/in/example/', expected: 'linkedin' },
       { url: 'https://www.instagram.com/example/', expected: 'instagram' },
       { url: 'https://www.facebook.com/example.user', expected: 'facebook' },
+      { url: 'https://github.com/example', expected: 'github' },
       { url: 'https://x.com/example', expected: 'x' },
       { url: 'https://note.com/example', expected: 'note' },
       { url: 'https://www.example.org/', expected: 'link' },

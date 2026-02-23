@@ -4,6 +4,7 @@ import linkedinIcon from './linkedin';
 import xIcon from './x';
 import instagramIcon from './instagram';
 import facebookIcon from './facebook';
+import githubIcon from './github';
 import globeIcon from './globe';
 import sectionIcon from './section';
 import linkIcon from './link';
@@ -14,6 +15,7 @@ export const ICON_DEFINITIONS: Record<IconName, IconDefinition> = {
   x: xIcon,
   instagram: instagramIcon,
   facebook: facebookIcon,
+  github: githubIcon,
   globe: globeIcon,
   section: sectionIcon,
   link: linkIcon,
