@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  background:
+    radial-gradient(circle at 12% 15%, rgba(102, 138, 160, 0.35), transparent 38%),
+    radial-gradient(circle at 83% 10%, rgba(86, 111, 130, 0.22), transparent 36%),
+    radial-gradient(circle at 50% 100%, rgba(164, 186, 203, 0.12), transparent 45%),
+    linear-gradient(155deg, var(--bg-0) 0%, var(--bg-1) 45%, var(--bg-2) 100%);
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(rgba(255, 255, 255, 0.03) 0.6px, transparent 0.6px),
+    radial-gradient(rgba(255, 255, 255, 0.02) 0.7px, transparent 0.7px);
+  background-size: 3px 3px, 5px 5px;
+  background-position: 0 0, 2px 1px;
+  opacity: 0.7;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at center, transparent 35%, rgba(0, 0, 0, 0.45) 100%);
+}
+
+a {
+  color: inherit;
+}
+
+#app {
+  position: relative;
+  z-index: 1;
+  padding: 2.75rem 0 3.5rem;
+}
+
+@media (max-width: 767px) {
+  #app {
+    padding: 1.5rem 0 2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+  }
+
+  .profile-card,
+  .link-card,
+  .link-section-header {
+    animation: none !important;
+  }
+
+  .link-card,
+  .link-icon-wrap,
+  .icon {
+    transition-duration: 90ms !important;
+  }
+
+  .link-card:hover {
+    transform: none !important;
+  }
+
+  .icon,
+  .link-card:hover .icon {
+    transform: none !important;
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "bio-links-page",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Personal bio links page built with Vite + Vanilla TypeScript.",
+  "license": "MIT",
+  "keywords": [
+    "bio-links",
+    "vite",
+    "typescript",
+    "landing-page",
+    "qrcode"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf dist output test-results .playwright-cli tmp",
+    "dev": "vite --host",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "ci": "npm run test:unit && npm run build",
+    "test": "npm run test:unit && npm run test:e2e",
+    "test:unit": "vitest run",
+    "test:unit:watch": "vitest",
+    "test:e2e": "playwright test",
+    "e2e:install": "playwright install --with-deps chromium"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.3.0",
+    "@types/qrcode": "^1.5.6",
+    "jsdom": "^28.1.0",
+    "typescript": "~5.9.3",
+    "vite": "^7.3.1",
+    "vitest": "^4.0.18"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4"
+  }
+}
